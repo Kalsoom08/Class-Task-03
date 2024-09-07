@@ -22,6 +22,14 @@ let getNextButton = document.getElementById('submit-button');
 let getScore = document.getElementsByClassName('score-container')[0]; 
 
 
+function backgroundChanger(index) {
+  getOptions[index].style.backgroundColor = 'rgb(2, 84, 2)';
+}
+
+function reversingBackgroundChanger(index) {
+  getOptions[index].style.backgroundColor = 'rgb(66, 70, 152)';
+}
+
 let idx = 0;
 function questionFunction() {
   if (idx < questionsArray.length) {
@@ -53,13 +61,6 @@ function answer(correctIndex, selectedIndex) {
   idx++;
 }
 
-function backgroundChanger(index) {
-  getOptions[index].style.backgroundColor = 'rgb(2, 84, 2)';
-}
-
-function reversingBackgroundChanger(index) {
-  getOptions[index].style.backgroundColor = 'rgb(66, 70, 152)';
-}
 
 
 getNextButton.addEventListener('click', function() {
