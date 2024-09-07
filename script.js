@@ -6,7 +6,7 @@ let questionsArray = [
   },
   {
     question: "Which Pakistani bowler has the most wickets in Test cricket?",
-    options: ['Shoaib Akhtar', 'Wasim Akram', 'Waqar Younis', 'Yasir Shah'],
+    options: ['S.Akhtar', 'W.Akram', 'W.Younis', 'Y.Shah'],
     correct: 1,
   },
   {
@@ -23,8 +23,6 @@ let getScore = document.getElementsByClassName('score-container')[0];
 
 
 let idx = 0;
-let score = 0;
-
 function questionFunction() {
   if (idx < questionsArray.length) {
     let currentQuestion = questionsArray[idx];
@@ -47,6 +45,7 @@ function questionFunction() {
   }
 }
 
+let score = 0;
 function answer(correctIndex, selectedIndex) {
   if (selectedIndex === correctIndex) {
     alert("Correct");
