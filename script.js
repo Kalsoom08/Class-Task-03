@@ -66,7 +66,7 @@ function hideOptions() {
 
 
 function backgroundChanger(index) {
-  getOptions[index].style.backgroundColor = 'green';
+  getOptions[index].style.backgroundColor = 'rgb(2, 84, 2)';
 }
 
 function reversingBackgroundChanger(index) {
