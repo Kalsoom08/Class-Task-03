@@ -49,6 +49,9 @@ function questionFunction() {
   }
 }
 
+getNextButton.onclick = function() {
+  questionFunction();
+};
 let score = 0;
 function answer(correctIndex, selectedIndex) {
   if (selectedIndex === correctIndex) {
@@ -64,8 +67,6 @@ function answer(correctIndex, selectedIndex) {
 
 
 
-getNextButton.onclick = function() {
-  questionFunction();
-};
+
 
 questionFunction();
