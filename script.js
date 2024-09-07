@@ -63,6 +63,7 @@ function answer(correctIndex, selectedIndex) {
 
 
 
+
 getNextButton.addEventListener('click', function() {
   questionFunction();
 });
