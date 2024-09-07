@@ -37,11 +37,7 @@ function questionFunction() {
     }
   } else {
     getQuestion.innerHTML = "Quiz Over! Do you want to try again?";
-    hideOptions();
     getNextButton.innerHTML = "Play Again!";
-    getNextButton.onclick = function() {
-      restartQuiz();
-    };
   }
 }
 
@@ -57,13 +53,6 @@ function answer(correctIndex, selectedIndex) {
   idx++;
 }
 
-function hideOptions() {
-  for (let i = 0; i < getOptions.length; i++) {
-    getOptions[i].style.display = 'none'; 
-  }
-}
-
-
 function backgroundChanger(index) {
   getOptions[index].style.backgroundColor = 'rgb(2, 84, 2)';
 }
@@ -71,22 +60,7 @@ function backgroundChanger(index) {
 function reversingBackgroundChanger(index) {
   getOptions[index].style.backgroundColor = 'rgb(66, 70, 152)';
 }
-function showOptions() {
-  for (let i = 0; i < getOptions.length; i++) {
-    getOptions[i].style.display = 'inline-block'; 
-  }
-}
 
-function restartQuiz() {
-  idx = 0;
-  score = 0;
-  getScore.innerHTML = "Score: 0";
-  getNextButton.innerHTML = "Next Question";
-  getNextButton.onclick = function() {
-    questionFunction();
-  };
-  questionFunction();
-}
 
 getNextButton.addEventListener('click', function() {
   questionFunction();
