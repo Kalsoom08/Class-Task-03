@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="main-container">
+  <div class="question-container">
+    <h2 id="question"></h2>
+  </div>
+
+  <div class="option-container">
+    <button class="choice" onmouseover="backgroundChanger(0);" onmouseout="reversingBackgroundChanger(0);"></button>
+    <button class="choice" onmouseover="backgroundChanger(1);" onmouseout="reversingBackgroundChanger(1);"></button>
+    <button class="choice" onmouseover="backgroundChanger(2);" onmouseout="reversingBackgroundChanger(2);"></button>
+    <button class="choice" onmouseover="backgroundChanger(3);" onmouseout="reversingBackgroundChanger(3);"></button>
+  
+  </div>
+
+  <div class="submit-conatiner">
+    <button id="submit-button">Next Question</button>
+  </div>
+  <div class="score-container">
+    Score 
+  </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
+
